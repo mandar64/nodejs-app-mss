@@ -6,34 +6,35 @@
   "publishConfig": {
     "registry": "http://74.225.182.59:8081/repository/integration-nodejs/"
   },
-  
   "scripts": {
     "server": "http-server -c-1 -p 9999",
     "start1": "nodemon app.js",
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "sonar": "node sonar-project.js"
+    "test": "mocha",
+    "sonar": "./sonar-scanner-5.0.1.3006-linux/bin/sonar-scanner"
   },
   "dependencies": {
-    "cfenv": "^1.1.0",
-    "express": "^4.16.4"
+    "cfenv": "^1.2.4",
+    "express": "^4.21.2"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
-    "sonarqube-scanner": "^2.7.0"
+    "mocha": "^10.2.0",
+    "nodemon": "^3.1.10",
+    "sonarqube-scanner": "^2.9.1"
   },
   "engines": {
-    "node": "v10.6.0"
+    "node": ">=18.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "http://74.225.182.59:8081/repository/integration-nodejs/"
+    "url": "https://github.com/mandar64/nodejs-app-mss.git"
   },
   "keywords": [
     "node",
     "Mithun Technologies",
     "express"
   ],
-  "author": "Mithun Reddy Lacchannagari",
+  "author": "Mandar Nikam",
   "license": "MIT"
 }
+
